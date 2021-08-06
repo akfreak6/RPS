@@ -36,21 +36,20 @@ function computerPlay(items){                                       //computer s
 }
 function game()
 {
-    while( i <= 4 ){
-        console.log(i);
-        playRound()
-    }
-    if((i === 4) && (p>c)){
+
+    if((i == 5) && (p>c)){                                             //iteration to count wins
         console.log("You win bish!!")
     }
-    else if((i === 4) && (c>p)){
+    else if((i == 5) && (c>p)){
         console.log("Computer Wins beyotch!")
+    }
+    else if ((i==5) && (p==c)){
+        console.log("Y'all both suck at this!! Tie!!!!")
+    }
+
+    while( i <= 4 ){                                                   //iterations to count games
+        // console.log(i);
+        playRound()
     }
 }
 game()
-// if((i === 4) && (p>c)){
-//     console.log("You win bish!!")
-// }
-// else if((i === 4) && (c>p)){
-//     console.log("Computer Wins beyotch!")
-// }
